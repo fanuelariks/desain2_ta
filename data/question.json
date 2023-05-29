@@ -1,0 +1,113 @@
+{
+  "users": [{
+    "name": "Fanuel Ari",
+    "nomor_ID": 1111,
+    "usia": 23,
+    "kelamin": "Laki-laki",
+    "berat": 78,
+    "tinggi": 173,
+    "email": "fanuelari@gmail.com",
+    "tempat_lahir": "Kediri",
+    "tanggal_lahir": "17 Agustus 2000",
+    "domisili": "Yogyakarta",
+    "rujukan": "RS Siloam Yogyakarta"
+    }],
+  "survey": {
+    "1": {
+      "statement1": "Saya tidak pernah batuk",
+      "statement2": "Saya selalu batuk",
+      "answerOptions": [
+        { "answer": "0" },
+        { "answer": "1" },
+        { "answer": "2" },
+        { "answer": "3" },
+        { "answer": "4" },
+        { "answer": "5" }
+      ]
+    },
+    "2": {
+      "statement1": "Tidak ada dahak (riak) sama sekali",
+      "statement2": "Dada saya penuh dengan dahak (riak)",
+      "answerOptions": [
+        { "answer": "0" },
+        { "answer": "1" },
+        { "answer": "2" },
+        { "answer": "3" },
+        { "answer": "4" },
+        { "answer": "5" }
+      ]
+    },
+    "3": {
+      "statement1": "Tidak ada rasa berat (tertekan) di dada",
+      "statement2": "Dada saya terasa berat (tertekan) sekali",
+      "answerOptions": [
+        { "answer": "0" },
+        { "answer": "1" },
+        { "answer": "2" },
+        { "answer": "3" },
+        { "answer": "4" },
+        { "answer": "5" }
+      ]
+    },
+    "4": {
+      "statement1": "Ketika saya jalan mendaki/naik tangga, saya tidak sesak",
+      "statement2": "Ketika saya jalan mendaki/naik tangga, saya sangat sesak",
+      "answerOptions": [
+        { "answer": "0" },
+        { "answer": "1" },
+        { "answer": "2" },
+        { "answer": "3" },
+        { "answer": "4" },
+        { "answer": "5" }
+      ]
+    },
+    "5": {
+      "statement1": "Aktivitas sehari-hari saya di rumah tidak terbatas",
+      "statement2": "Aktivitias sehari-hari saya di rumah sangat terbatas",
+      "answerOptions": [
+        { "answer": "0" },
+        { "answer": "1" },
+        { "answer": "2" },
+        { "answer": "3" },
+        { "answer": "4" },
+        { "answer": "5" }
+      ]
+    },
+    "6": {
+      "statement1": "Saya tidak khawatir keluar rumah karena kondisi paru saya",
+      "statement2": "Saya sangat khawatir keluar rumah karena kondisi paru saya",
+      "answerOptions": [
+        { "answer": "0" },
+        { "answer": "1" },
+        { "answer": "2" },
+        { "answer": "3" },
+        { "answer": "4" },
+        { "answer": "5" }
+      ]
+    },
+    "7": {
+      "statement1": "Saya dapat tidur dengan nyenyak",
+      "statement2": "Saya tidak dapat tidur dengan nyenyak karena kondisi paru saya",
+      "answerOptions": [
+        { "answer": "0" },
+        { "answer": "1" },
+        { "answer": "2" },
+        { "answer": "3" },
+        { "answer": "4" },
+        { "answer": "5" }
+      ]
+    },
+    "8": {
+      "statement1": "Saya sangat bertenaga",
+      "statement2": "Saya tidak punya tenaga sama sekali",
+      "answerOptions": [
+        { "answer": "0" },
+        { "answer": "1" },
+        { "answer": "2" },
+        { "answer": "3" },
+        { "answer": "4" },
+        { "answer": "5" }
+      ]
+    }
+  }
+}
