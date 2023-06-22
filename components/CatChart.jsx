@@ -1,19 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { Bar } from "react-chartjs-2";
+import { Bar, Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
+  Filler,
   Legend,
 } from "chart.js";
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
+  Filler,
   Title,
   Tooltip,
   Legend
@@ -38,6 +42,7 @@ const CatChart = () => {
       ],
       datasets: [
         {
+          fill: true,
           label: "Skor CAT",
           data: [35, 30, 27, 25, 20, 12],
           borderColor: "rgb(53, 162, 235)",
@@ -67,7 +72,7 @@ const CatChart = () => {
   return (
     <>
       <div className="w-full md:col-span-2 relative lg:h-[40vh] h-[40vh] m-auto p-4 border rounded-lg bg-white">
-        <Bar data={chartData} options={chartOptions} />
+        <Line data={chartData} options={chartOptions} />
       </div>
     </>
   );

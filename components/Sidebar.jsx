@@ -17,11 +17,11 @@ const Sidebar = ({ children }) => {
             </div>
           </Link>
           <span className='border-b-[1px] border-gray-200 w-full p-2'></span>
-          <Link href='/profil'>
+          {/* <Link href='/profil'>
             <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <RxPerson size={20} />
             </div>
-          </Link>
+          </Link> */}
           <Link href='/data'>
             <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <BsClipboardData size={20} />

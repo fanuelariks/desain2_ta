@@ -76,9 +76,12 @@ const Statement = () => {
         >
           <div className="text-white p-2 w-full">
             <h2 className="text-3xl font-bold mb-2">
-              Pernyataan {currentQuestion + 1} dari {data.length}
+              COPD Assessment Test
             </h2>
             <div className="border-2 border-white w-28 inline-block mb-2"></div>
+            <h3 className="text-2xl font-semibold mb-2">
+              Pernyataan {currentQuestion + 1} dari {data.length}
+            </h3>
             <div className="flex flex-row w-full">
               <div className="p-2 lg:text-2xl text-lg text-left">
                 {data[currentQuestion]?.statement1}

@@ -26,7 +26,7 @@ const AudioRecorder = () => {
   const [recordingStatus, setRecordingStatus] = useState("inactive");
   const [audioChunks, setAudioChunks] = useState([]);
   const [audio, setAudio] = useState(null);
-  const [title, setTitle] = useState("Perekaman Wicara");
+  const [title, setTitle] = useState("Pengambilan Data Wicara");
   const [showPopUp, setShowPopUp] = useState(false);
 
   const getMicrophonePermission = async () => {
@@ -47,7 +47,7 @@ const AudioRecorder = () => {
   };
 
   const startRecording = async () => {
-    setTitle("Perekaman sedang berlangsung");
+    setTitle("Perekaman Data sedang Berlangsung");
     setRecordingStatus("recording");
     const media = new MediaRecorder(stream, { type: mimeType });
     mediaRecorder.current = media;
@@ -62,7 +62,7 @@ const AudioRecorder = () => {
   };
 
   const stopRecording = () => {
-    setTitle("Perekaman telah usai");
+    setTitle("Pengambilan Data Telah Usai");
     setRecordingStatus("inactive");
     mediaRecorder.current.stop();
     mediaRecorder.current.onstop = () => {
@@ -127,13 +127,20 @@ const AudioRecorder = () => {
             </div>
           )}
           {audio ? (
-            <p className="mb-5 text-lg font-small flex">
-              4. Untuk <span className="font-bold mx-1.5">mengulang</span>{" "}
-              perekaman, pasien menekan tombol{" "}
-              <span className="px-1.5 text-2xl text-red-600">
-                <BsFillPlayCircleFill />
-              </span>{" "}
-            </p>
+            <div>
+              <p className="mb-5 text-lg font-small flex">
+                4. Untuk <span className="font-bold mx-1.5">mengulang</span>{" "}
+                perekaman, pasien dapat menekan tombol{" "}
+                <span className="px-1.5 text-2xl text-red-600">
+                  <BsFillPlayCircleFill />
+                </span>{" "}
+              </p>
+              <p className="mb-5 text-lg font-small flex">
+                5. Untuk <span className="font-bold mx-1.5">menyelesaikan</span>{" "}
+                perekaman, pasien dapat menekan tombol{" "}
+                <span className="font-bold mx-1.5">Submit</span>
+              </p>
+            </div>
           ) : null}
         </div>
         <main>
@@ -165,12 +172,15 @@ const AudioRecorder = () => {
               </div>
             ) : null}
           </div>
-          
-          {audio && recordingStatus === 'inactive' ? (
+
+          {audio && recordingStatus === "inactive" ? (
             <div className="audio-container">
               {/* <audio src={audio} controls></audio> */}
               <div className=" p-2 w-full flex justify-center">
-                <button onClick={() => setShowPopUp(true)} className="w-2/3 p-3  bg-neutral-500 rounded-3xl text-white font-bold">
+                <button
+                  onClick={() => setShowPopUp(true)}
+                  className="w-2/3 p-3  bg-neutral-500 rounded-3xl text-white font-bold"
+                >
                   Submit
                 </button>
 
@@ -209,8 +219,8 @@ const AudioRecorder = () => {
           </h2>
           <div className="border-2 border-neutral-500 w-28 inline-block mb-2"></div>
           <div className="p-2 lg:text-2xl text-lg text-center text-neutral-500">
-            Rekaman suara anda telah kami simpan. Anda dapat melanjutkan ke proses
-            berikutnya
+            Rekaman suara anda telah kami simpan. Anda dapat melanjutkan ke
+            proses berikutnya
           </div>
           <Link href="/AmbilData" className="mt-10 w-1/5">
             <button className="w-full p-3 bg-neutral-500 rounded-3xl text-white font-bold">
